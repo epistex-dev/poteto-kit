@@ -15,7 +15,7 @@ This file is for you, the coding agent (Claude Code, Cursor, Codex). A developer
 
 ```
 # poteto-kit adoption log
-Kit: https://github.com/EPISTEX0/poteto-kit @ <commit from step 0>   Branch: <name>   Tool: <Claude Code|Cursor|Codex>
+Kit: https://github.com/epistex-dev/poteto-kit @ <commit from step 0>   Branch: <name>   Tool: <Claude Code|Cursor|Codex>
 ## Repo facts       (Phase 1: stack, commands, how the app is reached, CI gate, existing agent files)
 ## Decisions        (pain, target app, constraints such as "no CI changes", approvals given, the gate command used)
 ## Installed        (one line per path: created or edited, and what for; also what lives outside the repo: config files, worktrees, test accounts by email only, each with how to remove it)
@@ -31,11 +31,11 @@ If `.agents/poteto-adoption.md` already exists, you are resuming: read it, re-ch
 ## Step 0: Get the kit
 
 ```sh
-git clone --depth 1 https://github.com/EPISTEX0/poteto-kit /tmp/poteto-kit
+git clone --depth 1 https://github.com/epistex-dev/poteto-kit /tmp/poteto-kit
 git -C /tmp/poteto-kit rev-parse HEAD   # record in the log
 ```
 
-If git or the network clone fails, read single files from `https://raw.githubusercontent.com/EPISTEX0/poteto-kit/main/<path>` (for example `.../main/templates/skills/verify-app/SKILL.md`). The clone is read-only source material: copy from it, never edit it. Keep it until the whole adoption is finished: after a pause a later session needs it, so clone it again if it is missing.
+If git or the network clone fails, read single files from `https://raw.githubusercontent.com/epistex-dev/poteto-kit/main/<path>` (for example `.../main/templates/skills/verify-app/SKILL.md`). The clone is read-only source material: copy from it, never edit it. Keep it until the whole adoption is finished: after a pause a later session needs it, so clone it again if it is missing.
 
 Read only these sections, once, before Phase 2: in `templates/README.md`, under `## Placeholders`, the subsections `### Project and commands (used across several templates)`, `### verify-app skill` and ``### Feature map (`references/features/`)``. Read `README.md` `## Adoption path by trust stage` only at Phase 5. Open other sections only when a phase names them.
 
@@ -122,7 +122,7 @@ for f in $(find .agents/skills -name '*.md'); do d=$(dirname "$f"); s=$(echo "$f
 done
 ```
 
-   This lists every pointer to a file or skill that is not installed (links with an absolute URL are skipped, text and target; the skills point at kit files such as `check-coverage.mjs`, `guardrails/enforcement-layers.md`, `evals/EVAL_PLAYBOOK.md`, `_skill-from-failure.md` and the `investigate` skill). Rewrite each to `https://github.com/EPISTEX0/poteto-kit/blob/main/<path>` (`find /tmp/poteto-kit -name <name>` gives the path) or delete the line, then run it again until it is empty. A hit on `AGENTS.md` means rewrite it to the instructions file the repo really has.
+   This lists every pointer to a file or skill that is not installed (links with an absolute URL are skipped, text and target; the skills point at kit files such as `check-coverage.mjs`, `guardrails/enforcement-layers.md`, `evals/EVAL_PLAYBOOK.md`, `_skill-from-failure.md` and the `investigate` skill). Rewrite each to `https://github.com/epistex-dev/poteto-kit/blob/main/<path>` (`find /tmp/poteto-kit -name <name>` gives the path) or delete the line, then run it again until it is empty. A hit on `AGENTS.md` means rewrite it to the instructions file the repo really has.
 8. Optional, ask first: add one line to `AGENTS.md` (or `CLAUDE.md`) saying that any claim that something works must come with a `verify-app` evidence report.
 
 **Exit criterion:** the developer saw the agent run the real app and bring evidence, without copy-pasting a screenshot or an error back. If they did not, say so in the report and do not call the phase done.

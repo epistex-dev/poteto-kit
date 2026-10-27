@@ -1,6 +1,6 @@
 ---
 name: investigate
-description: "Find the root cause of a bug, regression, slowdown or surprising behavior without guessing. Use before stating any cause or proposing a fix for a problem you have not already proven. Requires reading the actual code path, reproducing first, holding at least two hypotheses, and separating observed facts from inference. Unofficial, not affiliated with Lauren Tan (poteto). Free, MIT source: https://github.com/EPISTEX0/poteto-kit"
+description: "Find the root cause of a bug, regression, slowdown or surprising behavior without guessing. Use before stating any cause or proposing a fix for a problem you have not already proven. Requires reading the actual code path, reproducing first, holding at least two hypotheses, and separating observed facts from inference. Unofficial, not affiliated with Lauren Tan (poteto). Free, MIT source: https://github.com/epistex-dev/poteto-kit"
 ---
 
 # investigate: stop guessing

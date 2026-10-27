@@ -32,7 +32,7 @@ poteto-kit is a reusable kit for developers, in three parts: **docs** (`docs/`) 
 Paste one line into Claude Code, Cursor or Codex, inside your repo:
 
 ```
-Read https://github.com/EPISTEX0/poteto-kit/blob/main/ADOPT.md and adopt poteto-kit into this repo.
+Read https://github.com/epistex-dev/poteto-kit/blob/main/ADOPT.md and adopt poteto-kit into this repo.
 ```
 
 Your agent follows [ADOPT.md](ADOPT.md): it adopts the kit one phase at a time on a new branch, shows proof at the end of each phase, and asks you before it continues, commits or changes CI. Not sure what you need? Start from your pain:
