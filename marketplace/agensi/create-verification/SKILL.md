@@ -1,6 +1,6 @@
 ---
 name: create-verification
-description: "Bootstrap verification for this repo. Explore the codebase with parallel subagents (routes, top-level components, menus, keybindings, test ids), write verify-app/SKILL.md and the feature map directory verify-app/references/features/, add missing stable selectors, then prove it works by verifying 2-3 features end to end. Use once per repo, or when verification is missing or badly out of date. Unofficial, not affiliated with Lauren Tan (poteto). Free, MIT source: https://github.com/EPISTEX0/poteto-kit"
+description: "Bootstrap verification for this repo. Explore the codebase with parallel subagents (routes, top-level components, menus, keybindings, test ids), write verify-app/SKILL.md and the feature map directory verify-app/references/features/, add missing stable selectors, then prove it works by verifying 2-3 features end to end. Use once per repo, or when verification is missing or badly out of date. Unofficial, not affiliated with Lauren Tan (poteto). Free, MIT source: https://github.com/epistex-dev/poteto-kit"
 ---
 
 # create-verification: generate the control skill and feature map
